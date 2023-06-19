@@ -46,7 +46,7 @@ const Contact: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Contact - XanderIsWatchingYou</title>
+        <title>Contact Us - XanderIsWatchingYou</title>
       </Head>
       <div className="fadeInUp flex min-h-screen flex-col items-center justify-center p-5">
         <h1 className="mb-12 text-6xl font-extrabold text-white">
