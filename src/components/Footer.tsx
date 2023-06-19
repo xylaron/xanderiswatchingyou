@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <Link
-                href="/login"
+                href="https://dev.xanderiswatchingyou.online/"
                 className="transition-colors hover:text-white/50 "
               >
                 Staff Portal

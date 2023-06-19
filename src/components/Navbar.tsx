@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <Link
-                href="/dashboard"
+                href="https://dev.xanderiswatchingyou.online/"
                 className="px-3 text-center transition-colors  hover:text-white/80 active:text-white/60"
               >
                 Staff Portal
