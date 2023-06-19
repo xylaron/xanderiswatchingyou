@@ -26,6 +26,14 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <Link
+                href="/employee"
+                className="px-3 text-center transition-colors  hover:text-white/80 active:text-white/60"
+              >
+                Our Team
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="https://dev.xanderiswatchingyou.online/"
                 className="px-3 text-center transition-colors  hover:text-white/80 active:text-white/60"
               >

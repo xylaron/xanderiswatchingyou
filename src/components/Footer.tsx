@@ -20,7 +20,15 @@ const Footer: React.FC = () => {
                 href="/contact"
                 className="transition-colors hover:text-white/50 "
               >
-                Contact
+                Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/employee"
+                className="transition-colors hover:text-white/50 "
+              >
+                Our Team
               </Link>
             </li>
             <li>
