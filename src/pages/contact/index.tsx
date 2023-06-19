@@ -6,16 +6,32 @@ import { toast } from "react-hot-toast";
 const Contact: NextPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name || !email || !phoneNumber || !message) {
+    if (!name || !email || !phone || !message) {
       toast.error("Please fill in all fields.");
       return;
     }
-    console.log({ name, email, phoneNumber, message });
+    try {
+      const body = { name, email, phone, message };
+      await fetch(`/api/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      }).then((res) => {
+        if (res.status === 200) {
+          toast.success("Information sent successfully!");
+        } else {
+          toast.error("Information failed to send.");
+        }
+      });
+    } catch (error) {
+      console.error(error);
+    }
+    console.log({ name, email, phone, message });
   };
 
   return (
@@ -46,13 +62,14 @@ const Contact: NextPage = () => {
           />
           <input
             type="text"
-            name="phoneNumber"
+            name="phone"
             className="w-full border-2 border-gray-300 p-2"
             placeholder="Phone Number"
-            value={phoneNumber}
-            onChange={(e) => setPhoneNumber(e.target.value)}
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
           />
           <textarea
+            rows={8}
             name="message"
             className="w-full border-2 border-gray-300 p-2"
             placeholder="Message"
