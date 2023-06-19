@@ -20,7 +20,7 @@ const Employee: NextPage<Props> = (props) => {
         <div className="grid grid-cols-1 justify-items-center gap-8 sm:grid-cols-3">
           {props.employees.map((employee) => (
             <div
-              className="w-128 m-4 flex flex-col break-words rounded-3xl bg-neutral-900 p-6 shadow-lg"
+              className="m-4 flex w-96 flex-col break-words rounded-3xl bg-neutral-900 p-6 shadow-lg"
               key={employee.id}
             >
               <div className="mb-2 text-4xl font-bold">{employee.name}</div>
