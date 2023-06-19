@@ -5,7 +5,7 @@
 /* Global body styles for text and background */
 body {
   font-family: "Roboto", sans-serif;
-  @apply bg-neutral-900;
+  @apply bg-gradient-to-b from-[#2e026d] to-[#15162c];
   @apply text-white;
 }
 

@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Toaster } from "react-hot-toast";
 import "styles/globals.css";
 import Navbar from "components/Navbar";
+import Footer from "components/Footer";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
@@ -17,6 +18,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         <Toaster />
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </div>
     </>
   );
