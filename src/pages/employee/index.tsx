@@ -24,7 +24,9 @@ const Employee: NextPage<Props> = (props) => {
               key={employee.id}
             >
               <div className="mb-2 text-4xl font-bold">{employee.name}</div>
-              <div className="mb-2 text-2xl">{employee.role}</div>
+              <div className="mb-2 text-2xl font-bold">
+                <span>{employee.role}</span>
+              </div>
               <div className="mb-8 text-xl"></div>
               <div className="mb-2 text-lg">Email: {employee.email}</div>
               <div className="text-lg">Phone: {employee.phone}</div>
