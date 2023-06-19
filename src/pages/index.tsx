@@ -9,13 +9,13 @@ const Home: NextPage = () => {
       <Head>
         <title>Home - XanderIsWatchingYou</title>
       </Head>
-      <main className="flex flex-col items-center justify-center">
+      <main className="fadeInUp flex flex-col items-center justify-center">
         <div className="container flex flex-col items-center justify-center gap-8 px-4 py-16 ">
-          <h1 className="text-6xl font-extrabold text-white">
+          <h1 className="text-8xl font-extrabold text-white">
             <span>Xander</span>IsWatchingYou
           </h1>
-          <div className="text-3xl font-bold">
-            Discover new possibilites with us in providing market-leading web
+          <div className="text-4xl font-bold">
+            Discover new possibilities with us in providing market-leading web
             solutions.
           </div>
           <Link
