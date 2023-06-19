@@ -5,7 +5,14 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const { name, phone, email, message } = req.body;
+  interface Contact {
+    name: string;
+    phone: string;
+    email: string;
+    message: string;
+  }
+
+  const { name, phone, email, message } = req.body as Contact;
 
   const result = await prisma.contact.create({
     data: {
