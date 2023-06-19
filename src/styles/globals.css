@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global body styles for text and background */
+body {
+  font-family: "Roboto", sans-serif;
+  @apply bg-neutral-900;
+  @apply text-white;
+}
+
+span {
+  @apply text-purple-600;
+}
+
+main {
+  @apply min-h-[calc(100vh-52px)];
+}
+
+/* Global table styles */
+table {
+  @apply w-full;
+  @apply border-collapse;
+  @apply border border-gray-500;
+  @apply text-left;
+  @apply text-sm;
+  @apply text-white;
+  @apply font-medium;
+}
+td {
+  @apply py-2;
+  @apply px-4;
+  @apply border border-gray-500;
+}
+tr {
+  @apply transition-colors hover:bg-purple-900/50;
+}
+th {
+  @apply bg-black/40;
+  @apply text-white;
+  @apply font-medium;
+  @apply py-2;
+  @apply px-4;
+  @apply border border-gray-500;
+}
+
+/* Remove default button arrows for number input*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
