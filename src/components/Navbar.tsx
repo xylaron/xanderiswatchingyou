@@ -18,18 +18,18 @@ const Navbar: React.FC = () => {
           <ul className="flex">
             <li>
               <Link
-                href="/products"
-                className="px-3 text-center transition-colors  hover:text-white/80 active:text-white/60"
-              >
-                Products
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="/contact"
                 className="px-3 text-center transition-colors  hover:text-white/80 active:text-white/60"
               >
                 Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/dashboard"
+                className="px-3 text-center transition-colors  hover:text-white/80 active:text-white/60"
+              >
+                Staff Portal
               </Link>
             </li>
           </ul>
