@@ -19,3 +19,11 @@ model Contact {
   email     String
   message   String
 }
+
+model Employee {
+  id    Int    @id @default(autoincrement())
+  name  String
+  role  String
+  phone String
+  email String
+}
