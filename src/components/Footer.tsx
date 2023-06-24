@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <footer className=" bg-neutral-900 px-16 py-10 text-white">
       <div className="flex flex-wrap justify-between border-t border-gray-700 pt-5">
         <div className="mb-8">
-          <h3 className="mb-3 text-xl font-bold">XanderIsWatchingYou</h3>
+          <h3 className="mb-3 text-xl font-bold">ABC Company</h3>
         </div>
         <div>
           <h3 className="mb-3 font-bold">Navigation</h3>
@@ -55,8 +55,7 @@ const Footer: React.FC = () => {
       </div>
       <div className="mt-10 border-t border-gray-700 pt-5">
         <p className="text-center text-sm">
-          &copy; {new Date().getFullYear()} XanderIsWatchingYou. All Rights
-          Reserved.
+          &copy; {new Date().getFullYear()} ABC Company. All Rights Reserved.
         </p>
       </div>
     </footer>

@@ -11,7 +11,7 @@ const Employee: NextPage<Props> = (props) => {
   return (
     <>
       <Head>
-        <title>Our Team - XanderIsWatchingYou</title>
+        <title>Our Team - ABC Company</title>
       </Head>
       <div className="fadeInUp flex min-h-screen flex-col items-center justify-center p-5">
         <h1 className="mb-12 text-6xl font-extrabold text-white">

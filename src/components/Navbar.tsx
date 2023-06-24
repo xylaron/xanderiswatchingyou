@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
                 href="/"
                 className="px-3 text-center transition-colors  hover:text-white/80 active:text-white/60"
               >
-                XanderIsWatchingYou
+                ABC Company
               </Link>
             </li>
           </ul>
